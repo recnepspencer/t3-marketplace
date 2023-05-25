@@ -9,8 +9,11 @@ import { NavBar } from "~/components/Navbar";
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ClerkProvider {...pageProps}>
-      <NavBar/>
+      <div className="text-slate-800 bg-slate-300">
+              <NavBar/>
       <Component {...pageProps} />
+      </div>
+
     </ClerkProvider>
   );
 }
